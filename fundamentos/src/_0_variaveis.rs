@@ -54,13 +54,13 @@ pub fn variaveis() {
     println!("O valor da constante é: {}", VALOR_CONSTANTE);
     println!("O valor estático é: {}", VALOR_ESTATICO);
 
-    // static mut VALOR_ESTATICO_MUTAVEL: i8 = 2;
-    // unsafe {
-    //     println!("O valor estático mutável é: {}", VALOR_ESTATICO_MUTAVEL);
-    //     VALOR_ESTATICO_MUTAVEL = 3;
-    //     println!(
-    //         "O novo valor estático mutável é: {}",
-    //         VALOR_ESTATICO_MUTAVEL
-    //     );
-    // }
+    static mut VALOR_ESTATICO_MUTAVEL: i8 = 2;
+    unsafe {
+        println!("O valor estático mutável é: {}", VALOR_ESTATICO_MUTAVEL);
+        VALOR_ESTATICO_MUTAVEL = 3;
+        println!(
+            "O novo valor estático mutável é: {}",
+            VALOR_ESTATICO_MUTAVEL
+        );
+    }
 }
