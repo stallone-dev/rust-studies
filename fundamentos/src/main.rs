@@ -4,7 +4,7 @@ mod _2_tipos_de_dados;
 mod _3_if_else;
 mod _4_loops;
 mod _5_fn;
-mod _6_memory;
+mod _6_ownership;
 mod ex1_calculo_idade;
 mod ex2_tabuada;
 mod ex3_console_menu;
@@ -30,6 +30,8 @@ fn main() {
     println!("\n-- FUNÇÕES --");
     _5_fn::funcoes();
 
+    println!("\n-- OWNERSHIP --");
+    _6_ownership::owner();
     // println!("\n\n-- EXERCICIOS --");
     // println!("-- EX1:");
     // ex1_calculo_idade::ex1_calculo_idade();
